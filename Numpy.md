@@ -4,6 +4,7 @@
 3. List보다 빠르고 컴팩트, 배열은 메모리를 덜 소모한다
 ## Array
 1. `ndarray` = `N-dimensioanl Array`  
+
  ![이미지](https://numpy.org/devdocs/_images/threefundamental.png)  
 ### 배열 만드는 법
 1.  `np.array(object, dtype=None)`
@@ -45,3 +46,49 @@ array([('Galahad', 1.7, 38), ('Lancelot', 1.8999999999999999, 38),
       dtype=[('name', '|S10'), ('height', '<f8'), ('age', '<i4')])
 ```
 ### np.argsort(a, axis = -1)
+1차원 배열
+```
+>> x = np.array([3, 1, 2])
+>> np.argsort(x)
+array([1, 2, 0])
+```
+2차원 배열
+```
+>> x = np.array([[0, 3], [2, 2]])
+>> x
+array([[0, 3],
+       [2, 2]])
+
+>> ind = np.argsort(x, axis=0)  # sorts along first axis (down)
+>> ind
+array([[0, 1],
+       [1, 0]])
+>> np.take_along_axis(x, ind, axis=0)  # same as np.sort(x, axis=0)
+array([[0, 2],
+       [2, 3]])
+
+>> ind = np.argsort(x, axis=1)  # sorts along last axis (across)
+>> ind
+array([[0, 1],
+       [0, 1]])
+>> np.take_along_axis(x, ind, axis=1)  # same as np.sort(x, axis=1)
+array([[0, 3],
+       [2, 2]])
+```
+##  np.concatenate()
+```
+>> a = np.array([1, 2, 3, 4])
+>> b = np.array([5, 6, 7, 8])
+
+>> np.concatenate((a, b))
+array([1, 2, 3, 4, 5, 6, 7, 8])
+```
+```
+>> x = np.array([[1, 2], [3, 4]])
+>> y = np.array([[5, 6]])
+
+>> np.concatenate((x, y), axis=0)
+array([[1, 2],
+       [3, 4],
+       [5, 6]])
+```
