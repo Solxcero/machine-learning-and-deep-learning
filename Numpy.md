@@ -2,7 +2,10 @@
 1. 거의 모든 과학 및 공학분야에서 사용되는 오픈소스 Python 라이브러리
 2. 인터프리터 언어 (자바는 컴파일언어)
 3. List보다 빠르고 컴팩트, 배열은 메모리를 덜 소모한다
-## Array
+
+<details>
+<summary>## Array</summary>
+<div markdown="1">
 1. `ndarray` = `N-dimensioanl Array`  
 
  ![이미지](https://numpy.org/devdocs/_images/threefundamental.png)  
@@ -15,6 +18,8 @@
 6.  `np.arange([start,] stop[, step,], dtype=None)`
 7.  `np.linspace(start,stop,num=50,endpoint=True,retstep=False,dtype=None,axis=0)`
     > start 부터  stop 까지 균등하게 num 등분하기 
+</div>
+</details>
 
 ## sort
 ### np.sort(a, axis = -1)
