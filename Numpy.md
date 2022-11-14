@@ -4,7 +4,7 @@
 3. List보다 빠르고 컴팩트, 배열은 메모리를 덜 소모한다
 
 <details>
-<summary>## Array</summary>
+<summary> <h2>Array </summary>
 <div markdown="1">
 1. `ndarray` = `N-dimensioanl Array`  
 
@@ -21,7 +21,10 @@
 </div>
 </details>
 
-## sort
+<details>
+<summary> <h2> sort </summary>
+<div markdown="1">
+
 ### np.sort(a, axis = -1)
 ```
 >> a = np.array([[1,4],[3,1]])
@@ -81,7 +84,13 @@ array([[0, 1],
 array([[0, 3],
        [2, 2]])
 ```
-##  np.concatenate()
+</div>
+</details>
+
+<details>
+<summary> <h2> np.concatenate() </summary>
+<div markdown="1">
+
 ```
 >> a = np.array([1, 2, 3, 4])
 >> b = np.array([5, 6, 7, 8])
@@ -112,6 +121,9 @@ array([[[1, 2, 3, 4]],
 array([[[1, 2, 3, 4],
         [5, 6, 7, 8]]])
 ```
+</div>
+</details>
+
 ## 구조 파악하기 
 `a.ndim` : 배열의 차원   
 `a.shape` : 배열의 모양
