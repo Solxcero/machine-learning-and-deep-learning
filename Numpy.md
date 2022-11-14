@@ -141,3 +141,52 @@ print(np.concatenate((a,b),axis=0).ndim) # 3
 ```
 </div>
 </details>
+<details>
+<summary> <h2> reshape  </summary>
+<div markdown="1">
+
+```python
+>> a = np.arange(6)
+>> a
+array([0, 1, 2, 3, 4, 5])
+
+>> a.reshape(3,2)
+array([[0, 1],
+       [2, 3],
+       [4, 5]])
+
+>> np.reshape(a,(2,3))
+array([[0, 1, 2],
+       [3, 4, 5]])
+```
+</div>
+</details>
+<details>
+<summary> <h2> newaxis  </summary>
+<div markdown="1">
+
+```python
+>> a = np.array([1,2,3,4,5,6])
+>> a.shape
+(6,)
+
+>> a2 = a[np.newaxis,:]
+>> print(a2) 
+[[1 2 3 4 5 6]]
+>> print(a2.shape)
+(1, 6)
+
+>> a3 = a[:,np.newaxis]
+>> print(a3)
+[[1]
+ [2]
+ [3]
+ [4]
+ [5]
+ [6]] 
+ >> print(a3.shape)
+ (6, 1)
+ ```
+ </div>
+ </details>
+ 
