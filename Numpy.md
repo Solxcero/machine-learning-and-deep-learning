@@ -26,7 +26,7 @@
 <div markdown="1">
 
 ### np.sort(a, axis = -1)
-```
+```python
 >> a = np.array([[1,4],[3,1]])
 >> np.sort(a)                # sort along the last axis
 array([[1, 4],
@@ -39,7 +39,7 @@ array([[1, 1],
 ```
 
 🧐추가로 
-```
+```python
 >> dtype = [('name', 'S10'), ('height', float), ('age', int)]
 >> values = [('Arthur', 1.8, 41), ('Lancelot', 1.9, 38),
           ('Galahad', 1.7, 38)]
@@ -56,13 +56,13 @@ array([('Galahad', 1.7, 38), ('Lancelot', 1.8999999999999999, 38),
 ```
 ### np.argsort(a, axis = -1)
 1차원 배열
-```
+```python
 >> x = np.array([3, 1, 2])
 >> np.argsort(x)
 array([1, 2, 0])
 ```
 2차원 배열
-```
+```python
 >> x = np.array([[0, 3], [2, 2]])
 >> x
 array([[0, 3],
@@ -91,14 +91,14 @@ array([[0, 3],
 <summary> <h2> np.concatenate() </summary>
 <div markdown="1">
 
-```
+```python
 >> a = np.array([1, 2, 3, 4])
 >> b = np.array([5, 6, 7, 8])
 
 >> np.concatenate((a, b))
 array([1, 2, 3, 4, 5, 6, 7, 8])
 ```
-```
+```python
 >> x = np.array([[1, 2], [3, 4]])
 >> y = np.array([[5, 6]])
 
@@ -108,7 +108,7 @@ array([[1, 2],
        [5, 6]])
 ```
 ⁉ 3차원
-```
+```python
 >> a = np.array([[[1,2,3,4]]])
 >> b = np.array([[[5,6,7,8]]])
 
@@ -130,7 +130,7 @@ array([[[1, 2, 3, 4],
 `a.ndim` : 배열의 차원   
 `a.shape` : 배열의 모양
 `a.size` :  배열에 있는 데이터 크기 
-```
+```python
 >> a = np.array([[[1,2,3,4]]])
 >> b = np.array([[[5,6,7,8]]])
 
