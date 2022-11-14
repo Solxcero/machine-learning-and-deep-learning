@@ -10,11 +10,11 @@
 1.  `np.array(object, dtype=None)`
 2.  `np.zeros(shape, dtype=float)`
 3.  `np.full(shape, fill_value, dtype=None)`
-    ![image](image.png)
 4.  `np.ones(hape, dtype=None)`
 5.  `np.empty(shape, dtype=float)` --> _영역을 잡아서 제공하기 때문에 `zeros`와 `ones`보다는 속도가 빠름_
 6.  `np.arange([start,] stop[, step,], dtype=None)`
 7.  `np.linspace(start,stop,num=50,endpoint=True,retstep=False,dtype=None,axis=0)`
+    > start 부터  stop 까지 균등하게 num 등분하기 
 
 ## sort
 ### np.sort(a, axis = -1)
@@ -92,4 +92,31 @@ array([1, 2, 3, 4, 5, 6, 7, 8])
 array([[1, 2],
        [3, 4],
        [5, 6]])
+```
+⁉ 3차원
+```
+>> a = np.array([[[1,2,3,4]]])
+>> b = np.array([[[5,6,7,8]]])
+
+>> np.concatenate((a,b),axis=0)
+array([[[1, 2, 3, 4]],
+
+       [[5, 6, 7, 8]]])
+
+>> np.concatenate((a,b),axis=1)
+array([[[1, 2, 3, 4],
+        [5, 6, 7, 8]]])
+```
+## 구조 파악하기 
+`a.ndim` : 배열의 차원   
+`a.shape` : 배열의 모양
+`a.size` :  배열에 있는 데이터 크기 
+```
+>> a = np.array([[[1,2,3,4]]])
+>> b = np.array([[[5,6,7,8]]])
+
+#메서드 체이닝
+print(np.concatenate((a,b),axis=0).size) # 8 
+print(np.concatenate((a,b),axis=0).shape) # (2,1,4)
+print(np.concatenate((a,b),axis=0).ndim) # 3
 ```
