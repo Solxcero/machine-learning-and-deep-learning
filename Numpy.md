@@ -10,7 +10,7 @@
 1.  `np.array(object, dtype=None)`
 2.  `np.zeros(shape, dtype=float)`
 3.  `np.full(shape, fill_value, dtype=None)`
-    image.png
+    ![image](image.png)
 4.  `np.ones(hape, dtype=None)`
 5.  `np.empty(shape, dtype=float)` --> _영역을 잡아서 제공하기 때문에 `zeros`와 `ones`보다는 속도가 빠름_
 6.  `np.arange([start,] stop[, step,], dtype=None)`
