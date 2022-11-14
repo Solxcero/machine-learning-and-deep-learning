@@ -3,7 +3,7 @@
 2. 인터프리터 언어 (자바는 컴파일언어)
 3. List보다 빠르고 컴팩트, 배열은 메모리를 덜 소모한다
 ## Array
-1. `ndarray` = `N-dimensioanl Array`
+1. `ndarray` = `N-dimensioanl Array`  
  ![이미지](https://numpy.org/devdocs/_images/threefundamental.png)  
 ### 배열 만드는 법
 1.  `np.array(object, dtype=None)`
@@ -26,5 +26,22 @@ array([1, 1, 3, 4])
 >> np.sort(a, axis=0)        # sort along the first axis
 array([[1, 1],
        [3, 4]])
+```
+
+🧐추가로 
+```
+>> dtype = [('name', 'S10'), ('height', float), ('age', int)]
+>> values = [('Arthur', 1.8, 41), ('Lancelot', 1.9, 38),
+          ('Galahad', 1.7, 38)]
+>> a = np.array(values, dtype=dtype)       # create a structured array
+>> np.sort(a, order='height')                        
+array([('Galahad', 1.7, 38), ('Arthur', 1.8, 41),
+       ('Lancelot', 1.8999999999999999, 38)],
+      dtype=[('name', '|S10'), ('height', '<f8'), ('age', '<i4')])
+
+>> np.sort(a, order=['age', 'height'])               
+array([('Galahad', 1.7, 38), ('Lancelot', 1.8999999999999999, 38),
+       ('Arthur', 1.8, 41)],
+      dtype=[('name', '|S10'), ('height', '<f8'), ('age', '<i4')])
 ```
 ### np.argsort(a, axis = -1)
