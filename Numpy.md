@@ -162,7 +162,7 @@ array([[0, 1, 2],
 </div>
 </details>
 <details>
-<summary> <h2 style='color:1F18B1'> newaxis  </summary>
+<summary> <h2 style='color:#1F18B1'> newaxis  </summary>
 <div markdown="1">
 
 ```python
