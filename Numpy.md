@@ -4,7 +4,7 @@
 3. List보다 빠르고 컴팩트, 배열은 메모리를 덜 소모한다
 ## Array
 1. `ndarray` = `N-dimensioanl Array`
-2.  ![이미지](https://numpy.org/devdocs/_images/threefundamental.png)  
+ ![이미지](https://numpy.org/devdocs/_images/threefundamental.png)  
 ### 배열 만드는 법
 1.  `np.array(object, dtype=None)`
 2.  `np.zeros(shape, dtype=float)`
@@ -16,4 +16,15 @@
 
 ## sort
 ### np.sort(a, axis = -1)
+```
+>> a = np.array([[1,4],[3,1]])
+>> np.sort(a)                # sort along the last axis
+array([[1, 4],
+       [1, 3]])
+>> np.sort(a, axis=None)     # sort the flattened array
+array([1, 1, 3, 4])
+>> np.sort(a, axis=0)        # sort along the first axis
+array([[1, 1],
+       [3, 4]])
+```
 ### np.argsort(a, axis = -1)
