@@ -6,6 +6,7 @@
 <details>
 <summary> <h2>Array </summary>
 <div markdown="1">
+
 1. `ndarray` = `N-dimensioanl Array`  
 
  ![이미지](https://numpy.org/devdocs/_images/threefundamental.png)  
@@ -20,7 +21,6 @@
     > start 부터  stop 까지 균등하게 num 등분하기 
 </div>
 </details>
-
 <details>
 <summary> <h2> sort </summary>
 <div markdown="1">
@@ -123,8 +123,10 @@ array([[[1, 2, 3, 4],
 ```
 </div>
 </details>
+<details>
+<summary> <h2> 구조 파악하기  </summary>
+<div markdown="1">
 
-## 구조 파악하기 
 `a.ndim` : 배열의 차원   
 `a.shape` : 배열의 모양
 `a.size` :  배열에 있는 데이터 크기 
@@ -137,3 +139,5 @@ print(np.concatenate((a,b),axis=0).size) # 8
 print(np.concatenate((a,b),axis=0).shape) # (2,1,4)
 print(np.concatenate((a,b),axis=0).ndim) # 3
 ```
+</div>
+</details>
