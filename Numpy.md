@@ -162,7 +162,8 @@ array([[0, 1, 2],
 </div>
 </details>
 <details>
-<summary> <h2 style='color:#1F18B1'> newaxis  </summary>
+<summary> <h2> newaxis
+<p> 축 추가 하기(=차원 늘리기)</p>  </summary>
 <div markdown="1">
 
 ```python
@@ -189,4 +190,25 @@ array([[0, 1, 2],
  ```
  </div>
  </details>
- 
+<details>
+<summary> <h2> 기본 연산</summary>
+<div markdown="1">
+
+![이미지](https://numpy.org/devdocs/_images/np_data_plus_ones.png)  
+더하기 연산   
+![이미지](https://numpy.org/devdocs/_images/np_sub_mult_divide.png)   
+빼기 연산 / 곱하기 연산 / 나누기 연산 
+
+### sum
+```python
+>> x =  = np.array([[1, 1], [2, 2]])
+>> b.sum(axis=0)
+array([3, 3])
+
+>> b.sum(axis=1)
+array([2, 4])
+```
+
+[기본 연산 더 알아보기☝](https://numpy.org/devdocs/user/quickstart.html#quickstart-basic-operations)
+ </div>
+ </details>
