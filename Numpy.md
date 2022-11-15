@@ -194,9 +194,9 @@ array([[0, 1, 2],
 <summary> <h2> 기본 연산</summary>
 <div markdown="1">
 <p align='center'>
-<img src="https://numpy.org/devdocs/_images/np_data_plus_ones.png" width="60%" />  
+<img src="https://numpy.org/devdocs/_images/np_data_plus_ones.png" width="60%" /><br>
 더하기 연산     
-<img src="https://numpy.org/devdocs/_images/np_sub_mult_divide.png" width="60%" />    
+<img src="https://numpy.org/devdocs/_images/np_sub_mult_divide.png" width="60%" /> <br>   
 빼기 연산 / 곱하기 연산 / 나누기 연산 
 </p>
 
