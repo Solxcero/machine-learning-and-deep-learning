@@ -194,9 +194,11 @@ array([[0, 1, 2],
 <summary> <h2> 기본 연산</summary>
 <div markdown="1">
 
-![이미지](https://numpy.org/devdocs/_images/np_data_plus_ones.png)  
+<!-- ![이미지](https://numpy.org/devdocs/_images/np_data_plus_ones.png)   -->
+<img src="https://numpy.org/devdocs/_images/np_data_plus_ones.png" width="70%">
 더하기 연산   
-![이미지](https://numpy.org/devdocs/_images/np_sub_mult_divide.png)   
+<!-- ![이미지](https://numpy.org/devdocs/_images/np_sub_mult_divide.png)    -->
+<img src="https://numpy.org/devdocs/_images/np_sub_mult_divide.png" width="70%">
 빼기 연산 / 곱하기 연산 / 나누기 연산 
 
 ### sum
@@ -222,7 +224,8 @@ array([2, 4])
 >> data * 1.6
 array([1.6, 3.2])
 ```
-![이미지](https://numpy.org/devdocs/_images/np_multiply_broadcasting.png)
+<!-- ![이미지](https://numpy.org/devdocs/_images/np_multiply_broadcasting.png) -->
+<img src="https://numpy.org/devdocs/_images/np_multiply_broadcasting.png" width="70%">
 
 #### broadcast 충족 조건
 1. they are equal(서로 같거나), or
