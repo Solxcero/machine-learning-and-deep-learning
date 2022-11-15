@@ -193,13 +193,12 @@ array([[0, 1, 2],
 <details>
 <summary> <h2> 기본 연산</summary>
 <div markdown="1">
-
-<!-- ![이미지](https://numpy.org/devdocs/_images/np_data_plus_ones.png)   -->
-<img src="https://numpy.org/devdocs/_images/np_data_plus_ones.png" width="60%" align='center'/>  
-더하기 연산   
-<!-- ![이미지](https://numpy.org/devdocs/_images/np_sub_mult_divide.png)    -->
-<img src="https://numpy.org/devdocs/_images/np_sub_mult_divide.png" width="60%" align='center'/>  
+<p align='center'>
+<img src="https://numpy.org/devdocs/_images/np_data_plus_ones.png" width="60%" />  
+더하기 연산     
+<img src="https://numpy.org/devdocs/_images/np_sub_mult_divide.png" width="60%" />    
 빼기 연산 / 곱하기 연산 / 나누기 연산 
+</p>
 
 ### sum
 ```python
@@ -225,7 +224,7 @@ array([2, 4])
 array([1.6, 3.2])
 ```
 <!-- ![이미지](https://numpy.org/devdocs/_images/np_multiply_broadcasting.png) -->
-<img src="https://numpy.org/devdocs/_images/np_multiply_broadcasting.png" width="60%" align='center' />  
+<img src="https://numpy.org/devdocs/_images/np_multiply_broadcasting.png" width="60%"  />  
 
 #### broadcast 충족 조건
 1. they are equal(서로 같거나), or
