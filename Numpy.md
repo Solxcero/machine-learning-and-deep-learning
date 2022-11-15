@@ -195,10 +195,10 @@ array([[0, 1, 2],
 <div markdown="1">
 
 <!-- ![이미지](https://numpy.org/devdocs/_images/np_data_plus_ones.png)   -->
-<img src="https://numpy.org/devdocs/_images/np_data_plus_ones.png" width="70%">
+<img src="https://numpy.org/devdocs/_images/np_data_plus_ones.png" width="60%" align='center'/>  
 더하기 연산   
 <!-- ![이미지](https://numpy.org/devdocs/_images/np_sub_mult_divide.png)    -->
-<img src="https://numpy.org/devdocs/_images/np_sub_mult_divide.png" width="70%">
+<img src="https://numpy.org/devdocs/_images/np_sub_mult_divide.png" width="60%" align='center'/>  
 빼기 연산 / 곱하기 연산 / 나누기 연산 
 
 ### sum
@@ -225,7 +225,7 @@ array([2, 4])
 array([1.6, 3.2])
 ```
 <!-- ![이미지](https://numpy.org/devdocs/_images/np_multiply_broadcasting.png) -->
-<img src="https://numpy.org/devdocs/_images/np_multiply_broadcasting.png" width="70%">
+<img src="https://numpy.org/devdocs/_images/np_multiply_broadcasting.png" width="60%" align='center' />  
 
 #### broadcast 충족 조건
 1. they are equal(서로 같거나), or
